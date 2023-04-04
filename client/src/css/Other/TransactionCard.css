@@ -1,0 +1,30 @@
+.transaction-card{
+    max-width: 100%;
+    min-width: max-content;
+    padding: 1.5rem;
+    background-color: var(--text-color);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.transaction-card:hover{
+    scale: 1.01;
+}
+
+.transaction-card-details{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--background-color);
+}
+
+@media screen and (max-width: 480px){
+    .transaction-card-details{
+        font-size: 1.2rem;
+    }
+}

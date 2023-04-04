@@ -1,0 +1,94 @@
+.modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.655);
+}
+
+.modal {
+    width: 30%;
+    height: max-content;
+    padding: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-icon {
+    font-size: 2rem;
+    color: #000;
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+}
+
+/* form */
+
+.modal-form {
+    height: 90%;
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.modal-form input, select{
+    width: 100%;
+    padding: 0.5rem;
+    outline: none;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid grey;
+    font-family: 'Roboto', sans-serif;;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.modal-btn{
+    padding: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #06bf31e2;
+    color: #fff;
+}
+
+/* input containers */
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* media queries */
+
+
+@media screen and (max-width : 580px) {
+    .modal {
+        width: 95%;
+        height: max-content;
+    }
+}
+
+@media screen and (min-width: 580px) and (max-width : 1200px) {
+    .modal {
+        width: 40%;
+    }
+}

@@ -1,0 +1,79 @@
+.home-nav{
+    background-color: #181818b2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo .b-tracker{
+    font-size: 1.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+}
+
+.nav{
+    padding: .2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-items{
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.profile{
+    width: 4.2rem;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.dropdown{
+    width: 20rem;
+    height: max-content;
+    background-color: #252525f5;
+    position: absolute;
+    z-index: 9;
+    right: 0;
+    transition: all .3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0.5rem;
+}
+
+.nav-dropdown{
+    display: flex;
+    padding: 1rem;
+    color: #fff;
+    gap: 1rem;
+    font-size: 1.8rem;
+}
+
+.active-dropdown{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.inactive-dropdown{
+    opacity: 0;
+    transform: translateY(-100px);
+    visibility: hidden;
+}

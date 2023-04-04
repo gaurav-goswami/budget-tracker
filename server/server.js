@@ -1,0 +1,17 @@
+const app = require('./app');
+const connectDB = require('./database/db');
+
+
+// server
+
+const PORT = process.env.PORT;
+
+connectDB();
+
+app.get('/' , (req, res) => {
+    res.send(req.cookies);
+})
+
+const server = app.listen(PORT , () => {
+    console.log(`Server is Listening on PORT ${PORT}`)
+});

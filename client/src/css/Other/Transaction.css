@@ -1,0 +1,55 @@
+.transaction {
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: black;
+    margin: .5rem auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    /* income */
+
+    /* color: #2cd320; */
+
+    /* expense */
+    
+    /* color: rgb(235, 42, 42);  */
+    color: #fff;
+}
+
+.transaction{
+    max-width: 100%;
+    min-width: max-content;
+    padding: 1rem;
+    /* background-color: var(--text-color); */
+    background-color: rgba(48, 66, 131, 0.988);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1.2rem 0;
+}
+
+.t-details-container{
+    width: 18%;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.t-details{
+    font-size: 1.4rem;
+    /* color: var(--background-color); */
+    color: #fff;
+}
+
+.t-icon{
+    font-size: 1.8rem;
+    cursor: pointer;
+    /* color: var(--background-color); */
+    color: #fff;
+}
+
+

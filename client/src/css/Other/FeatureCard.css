@@ -1,0 +1,90 @@
+.feature-card {
+    width: 30rem;
+    height: 34rem;
+    background: rgba(28, 27, 27, 0.25);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+    border: 2px solid grey;
+    padding: 0.5rem 0rem 0rem 0rem;
+}
+
+.feature-card:hover {
+    border: 2px solid #43a362;
+    box-shadow: rgba(22, 241, 146, 0.632) 0px 5px 10px;
+
+}
+
+.feature-card-logo{
+    width: 100%;
+    height: 20%;
+    display: flex ;
+    justify-content: center;
+}
+
+.feature-card-logo .logo{
+    background-color: rgb(49, 51, 49);
+    padding: 1.7rem;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.feature-name{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-name p{
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.feature-detail{
+    width: 100%;
+    height: 60%;
+    padding: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.feature-detail .f-detail{
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 1.45rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.f-btn{
+    padding: .8rem 1rem;
+    margin-top: .5rem;
+    cursor: pointer;
+    background: #212020;
+    color: #fff;
+    border: none;
+    transition: all .3s ease-in-out;
+    font-size: 1.5rem;
+}
+
+.f-btn:hover{
+    background: #2f2d2da8;
+}
+
+
+@media screen and (max-width : 380px) {
+    .feature-card{
+        height: 37rem;
+        padding: .2rem;
+    }
+
+    .feature-card-logo{
+        height: 18%;
+    }
+}

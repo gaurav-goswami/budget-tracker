@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* variables */
+
+:root{
+  --text-color : #ffffff;
+  --background-color: #100f0f;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+body {
+  background-color: var(--background-color);
+
+}
+
+.light-theme{
+  --text-color : #110f0f;
+  --background-color : #fff;
+}
+
+.dark-theme{
+  --background-color : #100f0f;
+  --text-color : #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+::selection{
+  background-color: #2ae666;
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+}
+
+
+/* button */
+
+.btn {
+  width: max-content;
+  --color: #43a362;
+  --color2: rgb(255, 255, 255);
+  padding: 0.8em 1.75em;
+  background-color: transparent;
+  border-radius: 6px;
+  border: .3px solid var(--color);
+  transition: .5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+.btn::after,
+.btn::before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: .5s ease-out;
+  background-color: var(--color);
+}
+
+.btn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+  color: var(--color2);
+}
+
+.btn:active {
+  filter: brightness(.7);
+  transform: scale(.98);
+}
+
+/* Link tag */
+
+.link{
+  width: max-content;
+  color: #fff;
+}
+
+.icon{
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+
+/* custom scroll bar */
+
+::-webkit-scrollbar{
+  width: 1.2rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb{
+  width: 2rem;
+  background: var(--text-color);
+  border: 5px solid transparent;
+  border-radius: 1rem;
+  background-clip: content-box;
+}

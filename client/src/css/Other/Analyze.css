@@ -1,0 +1,86 @@
+.analyze-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.analyze-heading{
+    height: 5%;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: .8rem;
+    letter-spacing: .2rem;
+
+}
+
+.analyze-category{
+    width: 100%;
+    height: 4%;
+}
+
+.a-form{
+    width: 100%;
+    height: 100%;
+    background-color: var(--text-color);
+    display: flex;
+}
+
+
+
+.a-form select, option{
+    padding: .7rem;
+}
+
+.analyze-charts-container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+
+.analyze-charts-container .charts{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.expense-info{
+    height: 50%;
+    width: 80%;
+    overflow-y: scroll;
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .analyze-charts-container{
+        flex-direction: column;
+    }
+
+    .analyze-charts-container .charts{
+        height: 50%;
+        width: 100%;
+    }
+
+    .analyze-charts-container .pie-chart{
+        height: 40%;
+    }
+
+    .analyze-charts-container .bar-graph{
+        height: 60%;
+    }
+
+    .expense-info{
+        width: 100%;
+    }
+
+}
